@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
+public final class Slime extends Character{
+    public void attack(Character target){
+        System.out.println(this.name+"は体当たり攻撃！"+target.name+"に5のダメージを与えた！");
+        target.hp -= 5;
+    }
 
-public class Slime {
+    public Slime(String name, int hp){
+        super(name, hp);
+    }
 }
